@@ -1,0 +1,344 @@
+@import "mixin.sass"
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kumbh+Sans:wght@100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+*
+    margin: 0 auto
+    padding: 0
+    box-sizing: border-box
+
+.container
+    width: 1440px
+    height: 3758px
+
+.header
+    width: 1440px
+    height: 68px
+    justify-content: space-between
+    border-bottom-width: 1px
+    padding-top: 18px
+    padding-right: 35px
+    padding-bottom: 18px
+    padding-left: 35px
+    display: flex
+    border-bottom: 1px solid #1A1A1814
+
+.logo-box
+    display: flex
+    align-items: center
+    width: 190px
+    height: 32px
+    gap: 13px
+    margin-left: 0
+
+    &__logotitle
+        font-family: Kumbh Sans
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        letter-spacing: 0.15px
+        color: #ED1C24
+    &__darktext
+        font-family: Kumbh Sans
+        font-weight: 700
+        font-size: 20px
+        line-height: 24px
+        letter-spacing: 0.15px
+        color: #1A1A18
+
+.nav
+    width: 620px
+    height: 24px
+    gap: 45px
+    display: flex
+    list-style-type: none
+    text-decoration: none
+    margin-right: 0
+
+    &__item
+        font-family: DM Sans
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.5px
+        text-align: center
+        color: #231F20
+        text-decoration: none
+        list-style-type: none
+
+    &__link
+        text-decoration: none
+        color: #231F20
+
+.main
+    background: url(/src/img/plant-bg.png) no-repeat -10px -90px
+    width: 1440px
+    height: 720px
+
+.text-box
+    margin-left: 85px
+    margin-top: 151px
+
+    &__firstname
+        font-family: "Kumbh Sans", serif
+        font-weight: 700
+        font-size: 56px
+        line-height: 69.45px
+        letter-spacing: 0.15px
+        color: #231F20
+
+    &__secondname
+        font-family: "Kumbh Sans", serif
+        font-weight: 700
+        font-size: 92px
+        line-height: 114.1px
+        letter-spacing: 0.15px
+        color: #ED1C24
+
+    &__text
+        font-family: Poppins
+        font-weight: 400
+        font-size: 24px
+        line-height: 36px
+        letter-spacing: 0.15px
+        color: #1A1A18
+        width: 742px
+        height: 180px
+        margin-top: 26px
+        margin-left: 0
+
+.buttons
+    margin-top: 170px
+    margin-left: 67px
+    gap: 60px
+    display: flex
+    width: 460px
+    height: 70px
+
+.businesses
+    display: flex
+    flex-direction: column
+    width: 1440px
+    height: 360px
+    gap: 53px
+    padding: 120px 106px
+    background: #F8F9FB
+
+    &__businesses-title
+        font-family: DM Sans
+        font-weight: 400
+        font-size: 22px
+        line-height: 24px
+        letter-spacing: 0.5px
+        text-align: center
+
+.services
+    width: 1440px
+    height: 869px
+    gap: 48px
+    padding: 90px 75px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &__services-title
+        @include agencyTitles
+
+    &__services-text
+        font-family: Poppins
+        font-weight: 400
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0px
+        color: #000000
+        width: 1293px
+        height: 120px
+        margin-top: 28px
+
+    &__services-button
+        @include agencyButton
+
+.services-button__services-button-title
+    @include agencyButtonText
+
+.services-group
+    width: 1293px
+    height: 379px
+    display: flex
+    justify-content: space-between
+
+.services-box
+    width: 400px
+    height: 379px
+    gap: 10px
+    border-radius: 20px
+    border-width: 1px
+    padding: 30px
+    border: 2px dashed #000000
+
+    &__services-box-title
+        font-family: Poppins
+        font-weight: 600
+        font-size: 27px
+        line-height: 40.5px
+        letter-spacing: 0px
+        color: #ED1C24
+
+    &__services-box-text
+        font-family: Poppins
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0px
+        color: #000000
+        width: 340px
+        height: 168px
+
+.grafic
+    width: 1400px
+    height: 793px
+    gap: 20px
+    padding: 80px 75px
+    display: flex
+    flex-wrap: wrap
+
+    &__grafic-title
+        font-family: DM Sans
+        font-weight: 700
+        font-size: 36px
+        line-height: 46.87px
+        letter-spacing: 0.5px
+        color: #231F20
+        margin: 0
+
+    &__grafic-title2
+        @include agencyTitles
+        margin-top: 10px
+        margin-left: 0
+
+    &__grafic-text
+        font-family: Poppins
+        font-weight: 400
+        font-size: 24px
+        line-height: 36px
+        letter-spacing: 0px
+        color: #000000
+        width: 642px
+        height: 360px
+        margin-left: 0
+        margin-top: 20px
+
+    &__grafic-button
+        @include agencyButton
+        margin-left: 0
+        margin-top: -90px
+
+.grafic-button__grafic-button-title
+    @include agencyButtonText
+
+.works
+    width: 1440px
+    height: 948px
+    gap: 48px
+    padding: 70px 75px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__works-title
+        @include agencyTitles
+
+    &__works-text
+        font-family: Poppins
+        font-weight: 400
+        font-size: 24px
+        line-height: 36px
+        letter-spacing: 0px
+        color: #000000
+        text-align: center
+
+.works-group
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    width: 1290px
+    height: 578px
+
+    &__works-photo
+        width: 702px
+        height: 578px
+        margin-left: 0
+
+    &__works-group-title
+        font-family: Poppins
+        font-weight: 600
+        font-size: 40px
+        line-height: 60px
+        letter-spacing: 0%
+        color: #231F20
+        margin-left: 0
+        margin-top: 40px
+
+    &__works-group-text
+        font-family: Poppins
+        font-weight: 400
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0%
+        color: #231F20
+        width: 518px
+        height: 150px
+        margin-left: 0
+        margin-top: 10px
+
+    &__works-group-tech
+        font-family: Poppins
+        font-weight: 600
+        font-size: 24px
+        line-height: 36px
+        letter-spacing: 0%
+        color: #231F20
+        margin-left: 0
+        margin-top: 95px
+
+    &__works-group-list
+        font-family: Poppins
+        font-weight: 400
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0%
+        color: #231F20
+        margin-left: 0
+
+.works-buttons-group
+    display: flex
+    justify-content: space-between
+    margin-left: 0
+    margin-top: 25px
+
+    &__works-button
+        @include agencyButton
+
+.works-button-group__button-pre
+    width: 53px
+    height: 53px
+    gap: 10px
+    border-radius: 18px
+    text-align: center
+    border: 1px solid #231F20
+    background: white
+    margin-left: 145px
+
+.works-button-group__button-next
+    width: 53px
+    height: 53px
+    gap: 10px
+    border-radius: 18px
+    text-align: center
+    border: 1px solid #231F20
+    background: white
+    margin-left: 9px
+
+.works-button__works-button-title
+    @include agencyButtonText
